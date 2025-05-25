@@ -33,6 +33,7 @@ int main() {
 
 
     // Statement While
+    //mengerjakan blok dalam while jika statement memenuhi dan minimal looping dikerjakan sebanyak 0 kali
     // int i = 1;
     // while(i <= 10) {
     //     if (i % 2 == 0) {
@@ -41,6 +42,7 @@ int main() {
     // }
 
     // Statement Do-While
+    //mengerjakan blok dalam do while terlebih dahulu baru diperiksa, jika memenuhi maka lanjutkan loopingnya, minimal dikerjakan sebanyak 1 kali
     // int i = 1;
     // do {
     //     cout << i << endl;
