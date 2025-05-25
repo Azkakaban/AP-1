@@ -1,6 +1,6 @@
-#include <iostream>
-#include <string>
-#include <array>
+#include <iostream> //header untuk c++
+#include <string> //header untuk fungsi string seperti substr()
+#include <array> //header untuk fungsi fungsi array seperti .size()
 using namespace std;
 
 int main () {
@@ -9,8 +9,9 @@ int main () {
     /* 2 Cara Membuat Array */
 
     // cara 1 : array kosong 
-    // string nama[5];
+    // string nama[5]; //deklarasi array
 
+    //inisialisasi
     // nama[0] = "Alya";
     // nama[1] = "Parul";
     // nama[2] = "Syukron";
@@ -19,7 +20,7 @@ int main () {
 
     // cara 2 : array yang langsung diisi
     // string nama[5] = {"Alya", "Parul", "Syukron", "Aurick", "Dzakwan"};
-    // string nama[] = {"Alya", "Parul", "Syukron", "Aurick", "Dzakwan"};
+    // string nama[] = {"Alya", "Parul", "Syukron", "Aurick", "Dzakwan"}; //tidak memberi nilai pada array tetapi langsung diinisialisasi
 
     // Ascending Element in Array
     // cout << nama[0] << endl;
@@ -29,11 +30,13 @@ int main () {
     // cout << nama[4] << endl;
 
     // Menggunakan looping
+    //output Ascending
     // for (int i = 0; i < 5; i++) {
     //     cout << nama[i] << endl;
     // }
 
     // Descending Element in Array use Looping
+    //Output Descending
     // for (int i = 4; i >= 0; i--) {
     //     cout << nama[i] << endl;
     // }
@@ -43,7 +46,7 @@ int main () {
     // 1 3 5
     // 2 4 6
 
-    // int matrix[2][3] = {{1,3,5},{2,4,6}};
+    // int matrix[2][3] = {{1,3,5},{2,4,6}}; //Array 2 dimensi
     // for(int i = 0; i < 2; i++){
     //     for(int j = 0; j < 3; j++){
     //         cout << matrix[i][j] << " ";
@@ -84,18 +87,19 @@ int main () {
 
     /* 2. s1 = s1 + s2 */
     // s1 = "Hello";
-    // cout << "Hasil : " << s1 + s2 << endl;
+    // cout << "Hasil : " << s1 + s2 << endl; //penjumlahan string
 
-    /* 3. s1.length() */
+    /* 3. s1.length() */ //pmengambil anjang string menggunakan .length()
     // cout << s1.length() << endl;
     // cout << (s1 + s2).length() << endl;
 
-    /* 4. s1.substr(n,m) */
+    /* 4. s1.substr(n,m) */ //mengambil karakter tertentu dari string
     // cout << s1.substr(2,4) << endl;
     // cout << (s1 + s2).substr(5, 3) << endl;
 
 
     // Operator sizeof() 
+    //operator untuk menghitung besar byte
     // int angka = 10;
     // cout << sizeof(angka);
 
@@ -113,13 +117,13 @@ int main () {
 
     
     // Array Library
-    // array<float, 5> nilai = {87.2, 90, 100, 95.7, 78.5};
+    // array<float, 5> nilai = {87.2, 90, 100, 95.7, 78.5}; //mirip seperti array biasa, tetapi kita gunakan ini agar bisa mengakses fungsi .size()
     // cout << "Nilai : ";
-    // for (int i = 0; i < nilai.size(); i++) {
+    // for (int i = 0; i < nilai.size(); i++) { //fungsi .size() untuk mengetahui berapa banyak elemen pada Array
     //     cout << nilai[i] << " ";
     // }
 
-    // for (float n : nilai) {
+    // for (float n : nilai) { //looping berbasis Ranged,iterasi sebanyak jumlah elemen pada Array nilai dan nilai n berupa nilai dai Array nilai tergantung pada iterasi ke berapa
     //     cout << n << " ";
     // }
 }
