@@ -5,10 +5,10 @@ using namespace std;
 
 int main () {
 
-    string nama;
-    char kom, jenisKelamin;
-    int nim;
-    float ip;
+    string nama; //Deklarasi nama
+    char kom, jenisKelamin; //deklarasi kom dan jenisKelamin ke char
+    int nim; //deklarasi nim
+    float ip; // deklarasi ip
     
     /* ini untuk komentar 
     beberapa baris */
