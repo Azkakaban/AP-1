@@ -1,7 +1,8 @@
 #include <stdio.h> // header untuk C
-#include <conio.h>
+#include <conio.h> // header untuk getch()
 
 int main() {
+    //deklarasi variabel
     char nama[50];
     int nim;
     char kom[2];
@@ -15,7 +16,7 @@ int main() {
     printf("Masukkan nim : ");
     scanf("%d", &nim); // fungsi masukan pada C
 
-    getchar();
+    getchar(); //digunakan untuk mengambil dan membuang karakter newline (\n) yang tersisa di buffer setelah scanf("%d", &nim);.
 
     printf("Masukkan kom : ");
     gets(kom); 
@@ -30,9 +31,9 @@ int main() {
     printf("NIM : %d\n", nim);
 
     printf("KOM : ");
-    puts(kom); 
+    puts(kom); //untuk menampilkan string
     printf("IP : %f\n", ip);
 
     printf("press any button to continue...");
-    getch(); 
+    getch(); //menerima inputan karakter tanpa menekan ENTER dan tidak ditampilkan di layar.
 }
