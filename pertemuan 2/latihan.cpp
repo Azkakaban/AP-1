@@ -10,9 +10,10 @@ int main()
         cout << "Input jari-jari : ";
         cin >> jari;
 
-        volume = ((float)4/3) * (phi) * (jari*jari*jari);
-        luas = 4 * phi * jari * jari;
+        volume = ((float)4/3) * (phi) * (jari*jari*jari); // menghitung volume bola
+        luas = 4 * phi * jari * jari; //menghitung luas permukaan bola
 
+        //output
         cout << "Volume : " << volume << endl;
         cout << "luas : " << luas<<endl;
     }
