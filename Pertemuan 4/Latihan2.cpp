@@ -5,7 +5,7 @@ int main() {
     string kalimat;
     
     cout << "Masukkan sebuah kalimat: ";
-    getline(cin, kalimat);
+    getline(cin, kalimat); //inputan kalimat
 
     for (int i = 0; i < kalimat.length(); i++) {
         // Cek apakah karakter adalah huruf vokal
@@ -15,7 +15,7 @@ int main() {
         }
     }
 
-    cout << "Hasil: " << kalimat << endl;
+    cout << "Hasil: " << kalimat << endl; //output
 
  return 0;
 }
