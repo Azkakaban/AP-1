@@ -6,8 +6,9 @@ int main() {
     int i;
 
     cout << "Masukkan kalimat : ";
-    getline(cin, kalimat);
+    getline(cin, kalimat); //inputan string, bisa menerima spasi
 
+    //looping untuk mengubah string menjadi huruf besar semua
     for(i = 0; i < kalimat.length(); i++){
         kalimat[i] = toupper(kalimat[i]);
     }
