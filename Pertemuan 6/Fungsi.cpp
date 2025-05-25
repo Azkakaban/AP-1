@@ -2,25 +2,30 @@
 using namespace std;
 
 // Fungsi tanpa nilai balikan
+// Fungsi untuk menampilkan pesan
 void tampilkanPesan(){
     cout << "==== SELAMAT DATANG DI AP 1 ====" << endl;
 }
 
 // Fungsi dengan nilai balikan
+// Fungsi untuk menghitung nilai a + b dan mengemblikan nilainya
 int tambah(int a, int b){
     return a + b;
 }
 
 // Fungsi Overload
+// Fungsi Overload karena tipe data Fungsi dan Parameter Formal integer sedangkan Parameter Aktual Float
 int kali(int a, int b){
     return a * b;
 }
 
+//Fungsi untuk menghitung nilai a * b tetapi dengan hasil Float
 double kali (double a, double b) {
     return a * b;
 }
 
 // Fungsi Rekursif : menghitung nilai faktorial
+// Fungsi Rekursif yang mengacu pada dirinya sendiri, dan memiliki 2 bagian utama yaitu basis dan rekursi di mana proses rekursi akan mendekati nilai basis sampai proses rekursi selesai
 int faktorial(int n){
     if (n == 0 || n == 1) {
         return 1;
@@ -33,12 +38,12 @@ int main () {
     system("CLS");
 
     // menggunakan fungsi tanpa nilai balikan
-    tampilkanPesan();
+    tampilkanPesan(); //mengAkses fungsi tampilkanPesan
 
     int x = 5, y = 3;
 
     // menggunakan fungsi dengan nilai balikan
-    int hasilTambah = tambah(x, y);
+    int hasilTambah = tambah(x, y); //deklarasi sekaligus inisialisasi nilai hasilTambah dengan nilai balikan dari fungsi tambah()
     cout << "hasil penjumlahan : " << hasilTambah << endl;
 
     // menggunakan fungsi overload
