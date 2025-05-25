@@ -10,11 +10,13 @@ int main () {
     cin >> nilai;
 
     // if statement
+    //hanya mengecek 1 kali
     // if (nilai <= 65) {
     //     cout << "Anda tidak lulus" << endl;
     // }
 
     // if-else statement
+    //Ada 2 kemungkinan, jika Kondisi memenuhi maka dikerjakan jika tidak maka kerjakan perintah ketika tidak memenuhi
     // if (nilai <= 65) {
     //     cout << "Anda tidak lulus" << endl;
     // } else {
@@ -22,6 +24,7 @@ int main () {
     // }
 
     // if else if statement
+    //memiliki banyak pengecekan dengan urutan dari atas ke bawah,urutan atas diprioritaskan jika tidak memenuhi maka dicek terus sampai ke bawah
     // if (nilai == 100) {
     //     cout << "Anda Keceh !" << endl;
     // } else if (nilai <= 65) {
@@ -31,6 +34,7 @@ int main () {
     // }
 
     // Nested if
+    //if di dalam if
     // if (nilai <= 65) {
     //     cout << "Anda tidak lulus" << endl;
     // } else {
@@ -42,6 +46,7 @@ int main () {
     // }
 
     // Switch case
+    //versi lain dari if, tetapi perbandinganya harus dalam interval atau nilai tertentu
     // switch (nilai) {
     //     case 1:
     //         cout << "Senin" << endl;
@@ -87,6 +92,7 @@ int main () {
     //     cout << "Ganjil sih" << endl;
     // }
 
+    //jika (nilai % 2 == 0) memenuhi maka checkNum = "Genap", jika tidak maka checkNum = "Ganjil"
     string checkNum = (nilai % 2 == 0) ? "Genap" : "Ganjil";
     cout << nilai << " tuh bilangan " << checkNum << " sih " << endl;
 }
