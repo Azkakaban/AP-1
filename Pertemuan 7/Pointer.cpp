@@ -1,15 +1,18 @@
 #include <iostream>
 using namespace std;
 
+//Fungsi Penjumlahan a dan b (Bukan Pointer)
 void penjumlahan(int a, int b) {
     cout << a + b << endl;
 }
 
+//Fungsi Penjumlahan menggunakan pointer
 void penjumlahanPointer (int *a, int *b) {
     *a += *b;
     cout << *a << endl;
 }
 
+//Fungsi Menggandakan nilai a menggunakan pointer
 void doubleValue (int *a) {
     *a *= 2;
     cout << *a << endl;
@@ -42,7 +45,7 @@ int main() {
 
     // Pointer in Array
     int num[] = {1, 2, 3, 4, 5};
-    int *pointer_num = num;
+    int *pointer_num = num; //Pointer menunjuk ke elemen Pertama Array
     // cout << "Isi variabel num = " << num[0] << endl;
     // cout << "Alamat memori variabel num = " << &num[3] << endl;
     // cout << "Isi variabel pointer_num = " << pointer_num << endl;
@@ -62,10 +65,10 @@ int main() {
     // Pointer in Parameter
     // int num1 = 5;
     // int num2 = 7;
-    // penjumlahan(num1, num2);
+    // penjumlahan(num1, num2); //MengAkses Fungsi penjumlahan tanpa mengubah nilai
     // cout << num1 << endl;
     // cout << num2 << endl;
-    // penjumlahanPointer(&num1, &num2);
+    // penjumlahanPointer(&num1, &num2); //MengAkses Fungsi penjumlahanPointer dan mengubah nilai num1 secara langsung melalui pointer
     // cout << num1 << endl;
     // cout << num2 << endl;
 
@@ -80,7 +83,7 @@ int main() {
 
 
     // Dynamic Pointer
-    // int *ptr = new int;
+    // int *ptr = new int; //Allocation
     // *ptr = 30;
     // cout << "Isi variabel ptr = " << *ptr << " alamat variabel ptr = " << &ptr << endl;
 
@@ -93,6 +96,6 @@ int main() {
     // cout << "Masukkan sebuah angka = ";
     // cin >> n;
 
-    // doubleValue(&n);
+    // doubleValue(&n); //MengAkses Fungsi doubleValue untuk menggandakan nilai n melaui pointer
     // cout << "Nilai angka setelah di kali 2 = " << n << endl;
 }
